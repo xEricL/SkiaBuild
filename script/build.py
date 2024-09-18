@@ -58,7 +58,7 @@ def main():
         # Use Zig for cross-compilation
         'cc="zig cc -target aarch64-linux-gnu"',
         'cxx="zig c++ -target aarch64-linux-gnu"',
-        'extra_cflags=["-I/usr/aarch64-linux-gnu/include"]'
+        'extra_cflags=["-isystem /usr/include -I/usr/aarch64-linux-gnu/include -Wl,-s"]'
       ]
     else:
       args += [
