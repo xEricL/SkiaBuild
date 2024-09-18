@@ -48,10 +48,11 @@ apt-get install \
   libfreetype6-dev:arm64 \
   libturbojpeg:arm64 \
   libgif-dev:arm64 \
-  libharfbuzz-dev:arm64 \
+#  libharfbuzz-dev:arm64 \
   libicu-dev:arm64 \
   libjpeg-dev:arm64 \
   libpng-dev:arm64 \
   libwebp-dev:arm64 \
   curl \
-  zip -y
+  zip \
+  -y -o Debug::pkgProblemResolver=true
