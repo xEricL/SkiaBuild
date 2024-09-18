@@ -11,7 +11,7 @@ on:
       skip_release:
         description: 'Skip release related steps? (true/false)'
         required: true
-        default: 'false'
+        default: 'true'
 
 env:
   version: m116-d2c211228d

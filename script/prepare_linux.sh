@@ -22,6 +22,7 @@ apt-get install \
   ninja-build \
   fontconfig \
   libfontconfig-dev \
+  libfontconfig1-dev \
   libglu1-mesa-dev \
   libgl-dev \
   libx11-dev \
