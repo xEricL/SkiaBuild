@@ -11,4 +11,3 @@ sudo tar -C /usr/local -Jxvf zig.tar.xz
 sudo mv /usr/local/zig-* /usr/local/zig
 
 rm zig.tar.xz
-/usr/local/zig version
