@@ -32,8 +32,12 @@ apt-get install \
   libxcursor-dev \
   libxinerama-dev \
   libxkbcommon-dev \
+  libturbojpeg \
+  libfreetype6:arm64 \
+  freeglut3-dev:arm64 \
   libgl-dev:arm64 \
   libx11-dev:arm64 \
+  libglu1-mesa-dev:arm64 \
   libxrandr-dev:arm64 \
   libxxf86vm-dev:arm64 \
   libxi-dev:arm64 \
@@ -41,5 +45,13 @@ apt-get install \
   libxinerama-dev:arm64 \
   libxkbcommon-dev:arm64 \
   libfontconfig1-dev:arm64 \
+  libfreetype6-dev:arm64 \
+  libturbojpeg:arm64 \
+  libgif-dev:arm64 \
+  libharfbuzz-dev:arm64 \
+  libicu-dev:arm64 \
+  libjpeg-dev:arm64 \
+  libpng-dev:arm64 \
+  libwebp-dev:arm64 \
   curl \
   zip -y
