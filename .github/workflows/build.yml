@@ -63,6 +63,9 @@ jobs:
           sudo apt-get update
           sudo apt-get --yes install g\+\+-9-aarch64-linux-gnu
         if: ${{ matrix.target_machine == 'arm64' }}
+      - run: |
+          PATH=/usr/local/zig:${PATH}
+          echo "PATH=${PATH}" >> $GITHUB_ENV
       - run: PATH=/usr/lib/binutils-2.26/bin:$PATH python3 script/checkout.py --version ${{ env.version }}
       - run: PATH=/usr/lib/binutils-2.26/bin:$PATH python3 script/build.py --build-type ${{ matrix.build_type }} --machine ${{ matrix.target_machine }}
       - run: PATH=/usr/lib/binutils-2.26/bin:$PATH python3 script/archive.py --version ${{ env.version }} --build-type ${{ matrix.build_type }} --machine ${{ matrix.target_machine }}

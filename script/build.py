@@ -55,8 +55,9 @@ def main():
 
     if (machine == 'arm64') and (machine != common.native_machine()):
       args += [
-        'cc="aarch64-linux-gnu-gcc-9"',
-        'cxx="aarch64-linux-gnu-g++-9"',
+        # Use Zig for cross-compilation
+        'cc="zig cc -target aarch64-linux-gnu"',
+        'cxx="zig c++ -target aarch64-linux-gnu"',
         'extra_cflags=["-I/usr/aarch64-linux-gnu/include"]'
       ]
     else:
