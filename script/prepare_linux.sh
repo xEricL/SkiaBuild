@@ -17,6 +17,8 @@ update-alternatives --config gcc
 
 apt-get install git python wget -y
 apt-get install \
+  gcc-aarch64-linux-gnu \
+  g++-aarch64-linux-gnu \
   ninja-build \
   fontconfig \
   libfontconfig1-dev \
