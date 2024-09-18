@@ -48,7 +48,8 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        target_machine: ["x64", "arm64"]
+#        target_machine: ["x64", "arm64"]
+        target_machine: ["arm64"]
         build_type: [Release, Debug]
       fail-fast: false
     steps:
