@@ -21,7 +21,7 @@ apt-get install \
   g++-aarch64-linux-gnu \
   ninja-build \
   fontconfig \
-  libfontconfig1-dev \
+  libfontconfig-dev \
   libglu1-mesa-dev \
   libgl-dev \
   libx11-dev \
@@ -31,7 +31,7 @@ apt-get install \
   libxcursor-dev \
   libxinerama-dev \
   libxkbcommon-dev \
-  libfontconfig1-dev \
+  libfontconfig-dev \
   libgl-dev:arm64 \
   libx11-dev:arm64 \
   libxrandr-dev:arm64 \
