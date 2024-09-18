@@ -64,6 +64,7 @@ jobs:
           sudo ./script/install_zig.sh
           PATH=/usr/local/zig:${PATH}
           echo "PATH=${PATH}" >> $GITHUB_ENV
+        shell: bash
       - run: |
           sudo apt-get update
           sudo apt-get --yes install g\+\+-9-aarch64-linux-gnu
