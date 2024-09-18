@@ -29,6 +29,7 @@ apt-get install \
   libxcursor-dev \
   libxinerama-dev \
   libxkbcommon-dev \
+  libfontconfig1-dev \
   libgl-dev:arm64 \
   libx11-dev:arm64 \
   libxrandr-dev:arm64 \
@@ -37,5 +38,6 @@ apt-get install \
   libxcursor-dev:arm64 \
   libxinerama-dev:arm64 \
   libxkbcommon-dev:arm64 \
+  libfontconfig1-dev:arm64 \
   curl \
   zip -y
