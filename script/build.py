@@ -18,9 +18,9 @@ def main():
   args += [
     'target_cpu="' + machine + '"',
     'skia_use_system_expat=false',
-    'skia_use_system_libjpeg_turbo=false',
-    'skia_use_system_libpng=false',
-    'skia_use_system_libwebp=false',
+    'skia_use_system_libjpeg_turbo=true',
+    'skia_use_system_libpng=true',
+    'skia_use_system_libwebp=true',
     'skia_use_system_zlib=false',
     'skia_use_sfntly=false',
     'skia_use_freetype=true',
@@ -58,7 +58,6 @@ def main():
         # Use Zig for cross-compilation
         'cc="zig cc -target aarch64-linux-gnu -isystem /usr/include -L/usr/lib/aarch64-linux-gnu"',
         'cxx="zig c++ -target aarch64-linux-gnu -isystem /usr/include -L/usr/lib/aarch64-linux-gnu"',
-        # 'extra_cflags=["-isystem/usr/include/aarch64-linux-gnu", "-I/usr/aarch64-linux-gnu/include/fontconfig"]'
       ]
     else:
       args += [
